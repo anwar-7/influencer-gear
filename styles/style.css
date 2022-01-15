@@ -129,5 +129,80 @@ body {
   text-align: end;
   margin-top: 50px;
   margin-right: 15px;
+}
+.see-more a {
+  text-decoration: none;
   color: #e02c6d;
+}
+
+/*-----------------
+signup style start 
+-------------------*/
+.signup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.signup-laft {
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.signup-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Contact {
+  font-size: 14px;
+  font-weight: 500;
+}
+.Contact p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.signup-more {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text-field {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+/*-----------------
+  footer start 
+ -----------------*/
+footer {
+  background-color: #0a0826;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer h3 {
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+footer p {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+footer P i {
+  padding-right: 10px;
+  margin-bottom: 50px;
 }
