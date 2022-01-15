@@ -43,6 +43,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.banner:hover img {
+  transform: rotate(45deg);
+  transition: transform 1s ease-in-out;
+}
 .banner-laft {
   display: flex;
   flex-direction: column;
@@ -68,6 +72,11 @@ body {
 .banner-right img {
   width: 100%;
 }
+hr {
+  border: 1px solid #dce3ea;
+  max-width: 1110px;
+  margin: 0 auto;
+}
 
 /*-------------------------------------
     popular collection gallary style 
@@ -88,7 +97,7 @@ body {
   justify-content: center;
 }
 .card {
-  width: 329px;
+  max-width: 329px;
   padding: 30px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
@@ -144,9 +153,8 @@ signup style start
   gap: 50px;
 }
 .signup-laft {
-  width: 100%;
   padding: 30px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -205,4 +213,54 @@ footer p {
 footer P i {
   padding-right: 10px;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 950px) {
+  .container footer {
+    max-width: 100%;
+  }
+  .banner {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .popular-collaction {
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 30px; */
+    align-content: center;
+    justify-items: center;
+    align-items: end;
+  }
+  .card-photo img {
+    max-width: 350px;
+  }
+
+  .signup {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .banner {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popular-collaction {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    align-items: center;
+  }
+
+  .signup {
+    grid-template-columns: 1fr;
+  }
+  .signup-laft iframe {
+    max-width: fit-content;
+  }
 }
