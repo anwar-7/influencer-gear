@@ -6,7 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* start prymay style for all */
+/* ------------
+  prymay style
+  ------------ */
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -215,6 +217,9 @@ footer P i {
   margin-bottom: 50px;
 }
 
+/* --------------------------------------
+  media quary start for tablet device 
+-------------------------------------------*/
 @media screen and (max-width: 950px) {
   .container footer {
     max-width: 100%;
@@ -226,7 +231,7 @@ footer P i {
   }
   .popular-collaction {
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 30px; */
+    gap: 30px;
     align-content: center;
     justify-items: center;
     align-items: end;
@@ -240,6 +245,9 @@ footer P i {
   }
 }
 
+/* ---------------------------------
+  media quary start for mobile device 
+  ----------------------------------*/
 @media screen and (max-width: 450px) {
   .banner {
     grid-template-columns: 1fr;
