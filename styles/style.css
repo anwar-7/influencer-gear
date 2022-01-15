@@ -15,19 +15,21 @@ body {
   margin: 0 auto;
   padding: 30px;
 }
-.highlight {
-  /* background-color: #e02c6d; */
-}
+
 .primary-button {
   color: #ffffff;
   font-family: inherit;
   outline: 0;
   border: 0;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   padding: 10px 24px;
   border-radius: 41px;
   background-color: #e02c6d;
+}
+.btn-fw {
+  padding-left: 10px;
 }
 
 /* heder section style */
@@ -54,6 +56,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 20px 0;
+  text-align: justify;
 }
 .banner-right {
   display: flex;
@@ -62,4 +65,65 @@ body {
 }
 .banner-right img {
   width: 100%;
+}
+
+/* popular collection gallary start */
+.section-title h2 {
+  font-size: 28px;
+  color: #3a3a3a;
+  margin: 50px 0;
+}
+.section-title {
+  text-align: center;
+}
+
+.popular-collaction {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+.card {
+  width: 329px;
+  padding: 30px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.card-photo img {
+  width: 100%;
+  border-radius: 6px;
+}
+.card-title h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #18191f;
+}
+.card-title h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.card-rating {
+  color: #fb8200;
+  font-size: 16px;
+}
+.card-rating span {
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 5px;
+  color: #5e6366;
+}
+.card p {
+  color: #787885;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.see-more {
+  text-align: end;
+  margin-top: 50px;
+  margin-right: 15px;
+  color: #e02c6d;
 }
